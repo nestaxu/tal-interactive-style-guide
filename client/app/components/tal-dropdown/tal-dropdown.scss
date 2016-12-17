@@ -1,0 +1,59 @@
+.tal-dropdown {
+
+  label {
+    padding-top: 6px;
+    font-weight: 400;
+  }
+
+  .btn-group {
+    width: 70%;
+
+    .btn-option {
+      width: 70%;
+      text-align: left;
+    }
+
+    .btn-option, .btn-down {
+      background-color: transparent;
+      border-color: #CACBCC;
+      color: #000000;
+    }
+
+    .placeholder {
+      color: #CACBCC;
+    }
+
+    .dropdown-toggle::after {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: .3em;
+      margin-right: .3em;
+      vertical-align: middle;
+      content: "";
+      border-top: .3em solid;
+      border-right: .3em solid transparent;
+      border-left: .3em solid transparent;
+    }
+
+    .dropdown-menu {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 70%;
+
+      .dropdown-item {
+        display: block;
+        color: #000000;
+        text-decoration: none;
+        padding: 10px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #F5F5F5;
+        }
+      }
+    }
+  }
+
+}
