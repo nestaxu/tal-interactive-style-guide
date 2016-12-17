@@ -1,7 +1,6 @@
 {
-  "name": "eggly-es6",
+  "name": "tal-interactive-style-guide",
   "version": "0.0.1",
-  "description": "A simple bookmark manager built on ES6 using AngularJS 1.x, Gulp, and Webpack.",
   "main": "index.js",
   "dependencies": {
     "angular": "1.5.7",
@@ -57,10 +56,5 @@
     "webpack",
     "es6"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/simpulton/eggly-es6.git"
-  },
-  "author": "Luke Ruebbelke",
   "license": "Apache-2.0"
 }
