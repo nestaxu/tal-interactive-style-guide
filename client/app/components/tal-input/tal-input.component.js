@@ -6,7 +6,8 @@ const talInputComponent = {
   template,
   bindings: {
     label: '@',
-    placeholder: '@'
+    placeholder: '@',
+    onValueChanged: '&'
   },
   controller,
   controllerAs: 'talInputCtrl'

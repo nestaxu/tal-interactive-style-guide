@@ -1,5 +1,91 @@
 .tal-btn {
+
   font-size: 12px;
   padding: 8px 12px;
   background-color: transparent;
+  width: 100%;
+
+  @media(min-width: 992px) {
+    width: auto;
+  }
+
+  // TODO: Use sass variables for colour HEX values
+
+  &.btn-style-1 {
+    border-color: #000000;
+    background-color: transparent;
+  }
+
+  &.btn-style-2 {
+    border-color: #82C14B;
+  }
+
+  &.btn-style-3 {
+    border-color: #A8D480;
+  }
+
+  &.btn-style-4 {
+    border-color: #82C14B;
+    background-color: #82C14B;
+  }
+
+  &.btn-style-5 {
+    border-color: #A8D480;
+    background-color: #A8D480;
+  }
+
+  &.btn-style-6 {
+    border-color: #CACBCC;
+    background-color: #CACBCC;
+  }
+
+  &.btn-style-7 {
+    color: #FFFFFF;
+    border-color: #232D32;
+    background-color: #232D32;
+  }
+
+  &.btn-style-8 {
+    color: #FFFFFF;
+    border-color: #303E46;
+    background-color: #303E46;
+  }
+
+  &.btn-style-9 {
+    color: #FFFFFF;
+    border-color: #1B2225;
+    background-color: #1B2225;
+  }
+
+  &.btn-style-10 {
+    color: #CACBCC;
+    border-color: #CACBCC;
+  }
+
+  &.btn-style-11 {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+  }
+
+  &.btn-style-12 {
+    color: #82C14B;
+    border-color: #82C14B;
+  }
+
+  &.btn-style-13 {
+    color: #FFFFFF;
+    border-color: #CACBCC;
+  }
+
+  &.btn-style-14 {
+    color: #FFFFFF;
+    border-color: #A8D480;
+  }
+
+  &.btn-style-15 {
+    color: #000000;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+  }
+
 }

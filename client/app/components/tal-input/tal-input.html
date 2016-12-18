@@ -1,4 +1,18 @@
 <div class="tal-input">
-	<label class="pull-left" for="{{talInputCtrl.id}}" ng-bind="talInputCtrl.label"></label>
-	<input class="pull-right" id="{{talInputCtrl.id}}" placeholder="{{talInputCtrl.placeholder}}"/>
+
+	<div class="row">
+		<div class="col-xs-12 col-lg-3">
+			<label for="{{talInputCtrl.id}}" ng-bind="talInputCtrl.label"></label>
+		</div>
+
+		<div class="col-xs-12 col-lg-9">
+			<input
+				id="{{talInputCtrl.id}}"
+				placeholder="{{talInputCtrl.placeholder}}"
+				ng-model="talInputCtrl.value"
+				ng-change="talInputCtrl.onValueChanged({changedValue: talInputCtrl.value})"
+			/>
+		</div>
+	</div>
+
 </div>

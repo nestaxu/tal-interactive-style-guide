@@ -6,11 +6,11 @@ class TalDropdownController {
     this.displayDropdownMenu = false;
   }
 
-  selectItem(item) {
+  selectOption(option) {
     this.placeholder = null;
-    this.selectedItem = item;
+    this.selectedOption = option;
     this.displayDropdownMenu = false;
-    this.itemSelected(item);
+    this.onOptionSelected({selectedOption: option});
   }
   
 }

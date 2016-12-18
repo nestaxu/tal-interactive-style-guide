@@ -6,7 +6,8 @@ const talButtonComponent = {
   template,
   transclude: true,
   bindings: {
-    additionalClasses: '@class'
+    additionalClasses: '@class',
+    onClick: '&'
   },
   controller,
   controllerAs: 'talButtonCtrl'

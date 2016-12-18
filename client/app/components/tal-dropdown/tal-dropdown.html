@@ -1,26 +1,36 @@
 <div class="tal-dropdown">
-	<label class="pull-left" for="{{talDropdownCtrl.id}}" ng-bind="talDropdownCtrl.label"></label>
 
-	<div class="btn-group pull-right" id="{{talDropdownCtrl.id}}">
-		<button type="button" class="btn btn-option"
-						ng-class="{placeholder: talDropdownCtrl.placeholder}"
-						ng-bind="talDropdownCtrl.placeholder || talDropdownCtrl.selectedItem.name"
-		></button>
-		<button type="button" class="btn btn-down dropdown-toggle dropdown-toggle-split"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-						ng-click="talDropdownCtrl.displayDropdownMenu = !talDropdownCtrl.displayDropdownMenu"
-		>
-			<span class="sr-only">Toggle Dropdown</span>
-		</button>
+	<div class="row">
 
-		<div class="clearfix"></div>
-
-		<div class="dropdown-menu" ng-if="talDropdownCtrl.displayDropdownMenu">
-			<a class="dropdown-item"
-				 ng-repeat="item in talDropdownCtrl.items"
-				 ng-bind="item.name"
-				 ng-click="talDropdownCtrl.selectItem(item)"
-			></a>
+		<div class="col-xs-12 col-lg-3">
+			<label for="{{talDropdownCtrl.id}}" ng-bind="talDropdownCtrl.label"></label>
 		</div>
+
+		<div class="col-xs-12 col-lg-9">
+			<div class="btn-group dropdown" id="{{talDropdownCtrl.id}}">
+				<button type="button" class="btn btn-option"
+								ng-class="{placeholder: talDropdownCtrl.placeholder}"
+								ng-bind="talDropdownCtrl.placeholder || talDropdownCtrl.selectedOption.name"
+				></button>
+				<button type="button" class="btn btn-down dropdown-toggle dropdown-toggle-split"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+								ng-click="talDropdownCtrl.displayDropdownMenu = !talDropdownCtrl.displayDropdownMenu"
+				>
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+
+				<div class="clearfix"></div>
+
+				<div class="dropdown-menu" ng-if="talDropdownCtrl.displayDropdownMenu">
+					<a class="dropdown-option"
+						 ng-repeat="option in talDropdownCtrl.options"
+						 ng-bind="option.name"
+						 ng-click="talDropdownCtrl.selectOption(option)"
+					></a>
+				</div>
+			</div>
+		</div>
+
 	</div>
+
 </div>

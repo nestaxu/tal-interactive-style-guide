@@ -7,8 +7,8 @@ const talDropdownComponent = {
   bindings: {
     label: '@',
     placeholder: '@',
-    items: '<',
-    itemSelected: '&'
+    options: '<',
+    onOptionSelected: '&'
   },
   controller,
   controllerAs: 'talDropdownCtrl'

@@ -5,11 +5,11 @@
     font-weight: 400;
   }
 
-  .btn-group {
-    width: 70%;
+  .dropdown {
+    width: 100%;
 
     .btn-option {
-      width: 70%;
+      width: calc(100% - 33.41px);
       text-align: left;
     }
 
@@ -40,9 +40,9 @@
       display: block;
       position: absolute;
       left: 0;
-      width: 70%;
+      width: 100%;
 
-      .dropdown-item {
+      .dropdown-option {
         display: block;
         color: #000000;
         text-decoration: none;
